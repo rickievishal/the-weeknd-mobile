@@ -10,12 +10,12 @@ import { IoMdVolumeMute } from "react-icons/io";
 import { AnimatePresence, motion } from "framer-motion";
 
 const Body = () => {
-  const lenis = useLenis(({ scroll }) => {});
+
   const [isplaying, setIsPlaying] = useState(true);
   const [ismuted, setIsmuted] = useState(true);
   return (
     <>
-      <ReactLenis root>
+
         <div className="flex flex-col">
           <div className=" w-full py-5">
             <Weekend />
@@ -101,7 +101,7 @@ const Body = () => {
             <Carousel data={imgarr} />
           </div>
         </div>
-      </ReactLenis>
+
     </>
   );
 };
