@@ -36,7 +36,7 @@ const Body = () => {
                     <AnimatePresence>
                       {ismuted ? (
                         <motion.div
-                          className="absolute bg-gradient-to-br from-slate-800 via-red-600 to-slate-900 bg-clip-text text-transparent text-2xl text-gray-950  "
+                          className="absolute bg-gradient-to-br from-slate-800 via-red-600 to-slate-900 bg-clip-text  text-2xl text-gray-950  "
                           key="muted" // Add key to ensure unique components
                           initial={{ opacity: 0, y: 100 }}
                           animate={{ opacity: 1, y: 0 }}
@@ -48,7 +48,7 @@ const Body = () => {
                       ) : (
                         <motion.div
                           key="unmuted"
-                          className="bg-gradient-to-br from-slate-800 via-red-600 to-slate-900 bg-clip-text text-transparent text-3xl text-gray-950 " // Add key to ensure unique components
+                          className="bg-gradient-to-br from-slate-800 via-red-600 to-slate-900 bg-clip-text text-3xl text-gray-950 " // Add key to ensure unique components
                           initial={{ opacity: 0, y: 100 }}
                           animate={{ opacity: 1, y: 0 }}
                           exit={{ opacity: 0, y: -100 }}
